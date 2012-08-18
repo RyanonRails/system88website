@@ -1,0 +1,69 @@
+      <div id="contact-banner"></div>
+      
+      <div class="horizontal-rule"></div>
+       
+      <div class="content-wrapper">
+          <!-- Two Third Start -->
+          <div class="content-two-third-wrapper">
+          	<header class="content-two-third-header"></header>
+              <div class="content-two-third-background">
+                  <div class="content-two-third-body">
+                      <h1>Contact Us</h1>
+                      <div class="content-horizontal-rule"></div>
+                      <div id="contactarea">
+                      <p>Please use the form below to contact us.</p>
+                      <p><form name="contactform" id="contactform"><table width="580" cellpadding="0" cellspacing="0">
+                      <tr>
+                          <td width="61">Full Name:</td>
+                      <td width="176"><input type="text" name="name" class="contact-input" title="Please enter your full name"></td>
+                          <td width="78" class="contact-margin">Email Address:</td>
+                          <td width="245"><input type="text" name="email" class="contact-input" title="Please enter a valid email address"></td>
+                      </tr>
+                      <tr>
+                          <td>Message:</td>
+                          <td colspan="3"><textarea name="msg" rows="10" class="contact-message" title="Please enter your message"></textarea></td>
+                        </tr>
+                       <tr>
+                       	<td></td>
+                          <td><input type="button" value="Send Email" name="send" onClick="sendemail();" class="contact-submit"></td>
+                       </tr>
+                  </table></form></p>
+                  </div>
+                  </div>
+              </div>
+              <div class="content-two-third-footer"></div>
+          </div>
+          <!-- Two Third End -->
+          
+          <!-- One Third Start -->
+          <div class="content-second-one-third-wrapper">
+          	<header class="content-one-third-header"></header>
+              <div class="content-one-third-background">
+                  <div class="content-one-third-body">
+                      <h1>Phone Number</h1>
+                      <div class="content-horizontal-rule"></div>
+                      <p>Do you need an urgent response? Why not ring our 24/7 hotline and get your questions answered immediately!</p>
+                  </div>
+              </div>
+              <div class="content-one-third-footer"></div>
+              <header class="content-one-third-header"></header>
+              <div class="content-one-third-background">
+                  <div class="content-one-third-body">
+                      <h1>One Third Width</h1>
+                      <div class="content-horizontal-rule"></div>
+                      <p>This is a one thirds box.</p>
+                  </div>
+              </div>
+              <div class="content-one-third-footer"></div>
+          </div>
+          <!-- One Third End -->
+      </div>
+
+  <!-- Tooltip Script Start -->
+  <script type="text/javascript">
+  	$(function(){
+  		$(".contact-input").tipTip({defaultPosition: "right", maxWidth: "200px", edgeOffset: 20});
+  		$(".contact-message").tipTip({defaultPosition: "right", maxWidth: "200px", edgeOffset: 20});
+  	});
+  </script>
+  <!-- Tooltip Script End -->

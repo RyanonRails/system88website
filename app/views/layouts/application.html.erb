@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>System88 Development Inc.</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css' />
+</head>
+<body>
+  <div id="background-greenbar"></div>	
+
+
+  <!-- Page Wrapper Start -->
+  <div id="page-wrapper">
+
+  <div id="logo"><a href="home"><%= image_tag("System88Logo.png", :alt => "Home") %></a></div>
+
+      <!-- Navigation Start -->
+      <nav>
+          <ul> 
+              <li><a href="testimonials"><span class="menu_right">Testimonials</span></a></li> 
+              <li><a href="contact"><span class="menu_right">Contact Us</span></a></li> 
+              <li><a href="whatwedo"><span class="menu_right">What We Do</span></a></li> 
+              <li><a href="home"><span class="menu_right">Home</span></a></li> 
+          </ul> 
+      </nav>
+      <!-- Navigation End -->
+      
+      <div class="horizontal-rule-bottom"></div>
+      
+      <%= yield %>
+
+      <!-- Twitter Bar Start -->
+      <div id="twitter-invisible-wrapper">
+          <section id="twitter-wrapper">
+              <div id="twitter-bird"></div>
+              <div class="bar-left-text"><span class="green">Twitter:</span> New layout on www.evaske.com #evaske #hosting</div>
+              <a href="#" class="twitter-cross"></a>
+          </section>
+      </div>
+      <!-- Twitter Bar End -->
+
+      <!-- Footer Start --> 
+      <footer>
+          <div id="footer-sitemap">Sitemap</div>
+          <div class="horizontal-rule"></div>
+          <ul> 
+              <li><a href="home">Home</a></li> 
+          </ul> 
+          <ul> 
+              <li><a href="whatwedo">What We Do</a></li> 
+          </ul> 
+          <ul> 
+              <li><a href="contact">Contact Us</a></li> 
+          </ul> 
+          <ul> 
+              <li><a href="testimonials">Testimonials</a></li> 
+          </ul> 
+          <div id="copyright">© <span class="green">System88 Development Inc.</span></div> 
+      </footer>
+      <!-- Footer End -->  
+  </div>
+  <!-- Page Wrapper End -->
+</body>
+</html>
