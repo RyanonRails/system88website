@@ -55,6 +55,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.3.6)
+    pg (0.14.1)
     polyglot (0.3.3)
     quiet_assets (1.0.1)
       railties (~> 3.1)
@@ -112,6 +113,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   foreman
   jquery-rails
+  pg
   quiet_assets
   rails (= 3.2.6)
   sass-rails (~> 3.2.3)
