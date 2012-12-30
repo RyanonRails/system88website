@@ -4,9 +4,8 @@ System88website::Application.routes.draw do
 
   match 'home' => 'pages#home'
   match 'whatwedo' => 'pages#whatwedo'
-  match 'contact' => 'pages#contact'
+  match 'contact' => 'pages#contact', :via => [:get, :post]
   match 'testimonials' => 'pages#testimonials'
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

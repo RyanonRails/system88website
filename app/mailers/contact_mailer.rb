@@ -1,7 +1,7 @@
 class ContactMailer < ActionMailer::Base
-  def contact_us(contact)
-    mail(to: "ryan@system88.com", from: contact.from, subject: "Contact from #{contact.full_nume}") do |format|
-      format.text { render text: contact.message }
+  def contact_us(name, email, msg)
+    mail(to: "ryan@system88.com", from: "contact@system88.com", subject: "Contact from #{name}") do |format|
+      format.text { render text: "Email: #{email}\nMessage: #{msg}" }
     end
   end
 end
